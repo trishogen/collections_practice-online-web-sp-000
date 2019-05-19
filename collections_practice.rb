@@ -15,6 +15,7 @@ def swap_elements(array, index, destination_index)
     if a == array[index] && b == array[destination_index]
       a <=> b
     end
+  end
 end
 
 def reverse_array(array)
