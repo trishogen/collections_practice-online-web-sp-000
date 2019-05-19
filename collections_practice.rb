@@ -8,7 +8,6 @@ end
 
 def sort_array_char_count(array)
   array.sort {|a, b| a.size <=> b.size}
-  end
 end
 
 def swap_elements(array, index, destination_index)
