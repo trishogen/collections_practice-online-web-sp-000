@@ -11,7 +11,10 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array, index, destination_index)
-  array.sort {array[index] <=> array[destination_index]}
+  array.sort do |a, b|
+    if a == array[index] && b == destination_index
+      a <=> b
+    end
 end
 
 def reverse_array(array)
