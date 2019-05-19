@@ -3,11 +3,19 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  array.sort.reverse!
+  array.sort {|a,b| b <=>a}
 end
 
 def sort_array_char_count(array)
   array.sort do |a, b|
     a.size <=> b.size
   end
+end
+
+def swap_elements(array, index, destination_index)
+  array[index]
+end
+
+def reverse_array(array)
+  array.reverse!
 end
